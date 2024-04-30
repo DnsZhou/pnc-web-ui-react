@@ -6,6 +6,7 @@ const preDefinedScmsPrefix: { [key: string]: string } = {
   gitlab: 'GitLab',
   github: 'GitHub',
   [process.env.REACT_APP_GERRIT_URL_BASE || 'code']: 'Gerrit',
+  [process.env.REACT_APP_GERRIT_STAGE_URL_BASE || 'code']: 'Gerrit',
 };
 
 // Regular expression to match 'git://','git+ssh://', 'http://', 'https://', 'git@', and 'ssh://*@'
