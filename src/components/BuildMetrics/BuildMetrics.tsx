@@ -512,7 +512,7 @@ export const BuildMetrics = ({ builds, chartType, componentId }: IBuildMetricsPr
               {buildMetrics && buildMetrics.builds && buildMetrics.buildMetricsData && <canvas id={componentId} ref={chartRef} />}
             </div>
           </div>
-          {buildMetrics?.builds?.length! > 1 && (
+          {builds.length! > 1 && (
             <form className={styles['pnc-build-metric-navigation']}>
               <div className="pull-left"></div>
               <div className="pull-right">
